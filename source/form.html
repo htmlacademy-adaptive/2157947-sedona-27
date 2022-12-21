@@ -9,118 +9,113 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
-      <img src="img/logo.svg" width="185" height="96" alt="Логотип Седоны.">
+      <img class="main-header__image" src="img/logo.svg" width="185" height="96" alt="Логотип Седоны.">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle main-nav__toggle--disabled" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="site-list__item">
-            <a>Форма Отзыва</a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="site-list__item">
+          <a class="main-nav__link main-nav__link--active">Форма Отзыва</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Форма Отзыва</h1>
-    <section class="hero-form">
-      <img class="hero-form__subject-name" src="img/catalog/SEDONA.svg" width="229" height="39" alt="СЕДОНА.">
-      <img class="hero-form__mask-leftward" src="img/mask-1.svg" width="600" height="57" alt="Маска слева.">
-      <img class="hero-form__mask-right" src="img/mask-2.svg" width="600" height="57" alt="Маска справа.">
-    </section>
-    <section class="subtitle">
-      <h2 class="subtitle__title">Оставьте свой отзыв</h2>
-      <p class="subtitle__text"> Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+    <section class="hero hero--small">
+      <img class="hero__subject-name" src="img/catalog/SEDONA.svg" width="229" height="39" alt="СЕДОНА.">
+      <h2 class="hero__title">Оставьте свой отзыв</h2>
+      <p class="hero__text"> Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
         достопримечательностях</p>
-      <form action="url" method="post" class="subtitle__form">
-        <section class="personal-information">
-          <h2 class="personal-information__title">Представьтесь:</h2>
-          <label class="personal-information__name" for="appointment-name">ИМЯ*:</label>
-          <input class="personal-information__input-name" type="text" id="appointment-name" name="subtitle-form__name"
-            placeholder="Пётр" required>
-          <label class="personal-information__surname" for="appointment-surname">ФАМИЛИЯ*:</label>
-          <input class="personal-information__input-surname" type="text" id="appointment-surname"
-            name="subtitle-form__surname" placeholder="Иванов" required>
-          <label class="personal-information__patronymic" for="appointment-patronymic">Отчество:</label>
-          <input class="personal-information__input-patronymic" type="text" id="appointment-patronymic"
-            name="subtitle-form__patronymic" placeholder="Викторович" required>
-        </section>
-        <section class="contact-info">
-          <h2 class="contact-info__title">Контактная информация:</h2>
-          <label class="contact-info__phone" for="appointment-phone">Контактный телефон*:</label>
-          <input class="contact-info__form contact-info__form--phone" type="tel" id="appointment-phone"
-            name="subtitle-form__appointment-phone" placeholder="Введите телефон" required>
-          <label class="contact-info__email" for="newsletter-email">Электронная почта*:</label>
-          <input class="contact-info__input contact-info__input--email" type="email" id="newsletter-email"
-            name="subtitle-form__newsletter-email" placeholder="Введите e-mail" required>
-        </section>
-        <section class="feeling">
-          <h2 class="feeling__title">Ваше общее впечатление:</h2>
-          <label class="feeling__label">
-            <input class="select__radio" type="radio" id="select__radio-positive" name="select__radio"
+    </section>
+    <section class="form">
+      <form action="#" method="post" class="subtitle__form">
+        <fieldset class="form-fieldset">
+          <h2 class="form__title">Представьтесь:</h2>
+          <label class="form__label" for="appointment-name">ИМЯ*:</label>
+          <input class="form__input" type="text" id="appointment-name" name="subtitle-form__name" placeholder="Пётр"
+            required>
+          <label class="form__label" for="appointment-surname">ФАМИЛИЯ*:</label>
+          <input class="form__input" type="text" id="appointment-surname" name="subtitle-form__surname"
+            placeholder="Иванов" required>
+          <label class="form__label" for="appointment-patronymic">Отчество:</label>
+          <input class="form__input" type="text" id="appointment-patronymic" name="subtitle-form__patronymic"
+            placeholder="Викторович" required>
+        </fieldset>
+        <fieldset class="form-fieldset">
+          <h2 class="form__title">Контактная информация:</h2>
+          <label class="form__label" for="appointment-phone">Контактный телефон*:</label>
+          <input class="form__input" type="tel" id="appointment-phone" name="subtitle-form__appointment-phone"
+            placeholder="Введите телефон" required>
+          <label class="form__label" for="newsletter-email">Электронная почта*:</label>
+          <input class="form__input" type="email" id="newsletter-email" name="subtitle-form__newsletter-email"
+            placeholder="Введите e-mail" required>
+        </fieldset>
+        <fieldset class="form-fieldset">
+          <h2 class="form__title">Ваше общее впечатление:</h2>
+          <label class="form__radio-label">
+            <input class="form__radio-label-input" type="radio" id="select__radio-positive" name="select__radio"
               checked="checked">
-            <span class="feeling__text">Скорее положительное</span>
+            <span class="form__radio-text">Скорее положительное</span>
           </label>
-          <label class="feeling__label">
-            <input class="select__radio" type="radio" id="select__radio-negative" name="select__radio">
-            <span class="feeling__text">Скорее отрицательное</span>
+          <label class="form__radio-label">
+            <input class="form__radio-label-input" type="radio" id="select__radio-negative" name="select__radio">
+            <span class="form__radio-text">Скорее отрицательное</span>
           </label>
-          <label class="feeling__label">
-            <input class="select__radio" type="radio" id="select__radio-neutral" name="select__radio">
-            <span class="feeling__text">Затрудняюсь ответить</span>
+          <label class="form__radio-label">
+            <input class="form__radio-label-input" type="radio" id="select__radio-neutral" name="select__radio">
+            <span class="form__radio-text">Затрудняюсь ответить</span>
           </label>
-        </section>
-        <section class="visited">
-          <h2 class="visited__title">Посещенные достопримечательности:</h2>
-          <label class="visited__label">
-            <input class="visited__checkbox" type="checkbox" name="visited__checkbox" checked="checked">
-            <span class="visited__text">Мост Дьявола</span>
+        </fieldset>
+        <fieldset class="form-fieldset">
+          <h2 class="form__title">Посещенные достопримечательности:</h2>
+          <label class="form__checkbox-label">
+            <input class="form__checkbox-label-input" type="checkbox" name="visited__checkbox" checked="checked">
+            <span class="form__checkbox-text">Мост Дьявола</span>
           </label>
-          <label class="visited__label">
-            <input class="visited__checkbox" type="checkbox" name="visited__checkbox" checked="checked">
-            <span class="visited__text">Гора-Колокол</span>
+          <label class="form__checkbox-label">
+            <input class="form__checkbox-label-input" type="checkbox" name="visited__checkbox" checked="checked">
+            <span class="form__checkbox-text">Гора-Колокол</span>
           </label>
-          <label class="visited__label">
-            <input class="visited__checkbox" type="checkbox" name="visited__checkbox" checked="checked">
-            <span class="visited__text">Слайд-парк</span>
+          <label class="form__checkbox-label">
+            <input class="form__checkbox-label-input" type="checkbox" name="visited__checkbox" checked="checked">
+            <span class="form__checkbox-text">Слайд-парк</span>
           </label>
-          <label class="visited__label">
-            <input class="visited__checkbox" type="checkbox" name="visited__checkbox">
-            <span class="visited__text">Красные скалы</span>
+          <label class="form__checkbox-label">
+            <input class="form__checkbox-label-input" type="checkbox" name="visited__checkbox">
+            <span class="form__checkbox-text">Красные скалы</span>
           </label>
-        </section>
-        <section class="feedback">
-          <h2 class="feedback__title">Опишите свои эмоции:</h2>
-          <textarea class="feedback__text" name="feedback__text" placeholder="Опишите подробно все свои восторги"
+        </fieldset>
+        <fieldset class="form-fieldset">
+          <h2 class="form__title">Опишите свои эмоции:</h2>
+          <textarea class="form__textarea" name="feedback__text" placeholder="Опишите подробно все свои восторги"
             required=""></textarea>
-        </section>
-        <button class="subtitle__post" type="submit">Отправить отзыв</button>
-        <p class="subtitle__remark">* — обязательные поля</p>
-    </form>
+        </fieldset>
+        <button class="form__button button" type="submit">Отправить отзыв</button>
+        <p class="form__remark">* — обязательные поля</p>
+      </form>
+
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <section class="main-footer__hashtag">
-        <p class="main-footer__hashtag--order">#visitSEDONA</p>
-      </section>
+      <span class="main-footer__hashtag">#visitSEDONA</span>
       <div class="main-footer__social social">
         <b class="visually-hidden">Список социальных сетей</b>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">
+            <a class="social__link" href="#">
               <span class="visually-hidden">ВКонтакте</span>
               <svg class="social__img" width="48" height="48" fill="none" aria-hidden="true" aria-label="логотип вк."
                 xmlns="http://www.w3.org/2000/svg">
@@ -139,7 +134,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="#">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Телеграм</span>
               <svg class="social__img" width="48" height="48" fill="none" aria-hidden="true"
                 aria-label="логотип телеграм." xmlns="http://www.w3.org/2000/svg">
@@ -151,7 +146,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Ютуб</span>
               <svg class="social__img" width="48" height="48" fill="none" aria-hidden="true" aria-label="логотип ютуб."
                 xmlns="http://www.w3.org/2000/svg">
@@ -165,9 +160,8 @@
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <b class="copyright__text">РАЗРАБОТАНО</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">HTML Academy</span>
+          <span class="copyright__text">РАЗРАБОТАНО</span>
           <svg class="capyright-img" width="27" height="35" fill="none" aria-hidden="true"
             aria-label="логотип академии." xmlns="http://www.w3.org/2000/svg">
             <path
