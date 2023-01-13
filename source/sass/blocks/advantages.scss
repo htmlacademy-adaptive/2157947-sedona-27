@@ -1,0 +1,121 @@
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+.advantages__item-wrapper {
+  background-color: $blue;
+  width: 320px;
+  min-height: 211px;
+  padding: 54px 18px 40px;
+}
+
+.advantages__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.advantages__number {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 11px 0 17px;
+  margin: 0 auto;
+}
+
+.advantages__description {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 17px 0 0;
+  margin: 0 auto;
+}
+
+.advantages__image {
+  left:-101px;
+}
+
+.advantages__sublist{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advantages__subitem {
+  padding: 23px 18px 33px 18px;
+}
+
+.advantages__wrapper {
+display: flex;
+padding: 0;
+margin: 0;
+}
+.advantages__subicon {
+  display: block;
+  position: absolute;
+}
+
+.advantages__subtitle {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 0 16px 65px;
+  margin: 0;
+}
+.advantages__subdescription {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $gray;
+  text-transform: uppercase;
+  text-align: start;
+  padding: 0 0 0 65px;
+  margin: 0;
+}
+.advantages__item--greu {
+  color: black;
+}
+.advantages__titles {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.advantages__numbers {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 11px 0 17px;
+  margin: 0 auto;
+}
+
+.advantages__descriptions {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 17px 0 0;
+  margin: 0 auto;
+}
+.advantages__item--greu {
+  background-color: $grayscale;
+  width: 320px;
+  min-height: 168px;
+  padding: 24px 26px 24px 28px;
+}

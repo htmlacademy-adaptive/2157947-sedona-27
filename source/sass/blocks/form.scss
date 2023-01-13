@@ -1,0 +1,142 @@
+.form {
+  padding: 24px 20px 24px;
+}
+
+.form-fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+}
+
+.form__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  padding: 24px 0 20px;
+  margin: 0;
+  text-align: center;
+}
+
+.form__label {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $gray;
+  padding: 0 0 0 16px;
+  margin: 0;
+}
+
+.form__input {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  min-width: 280px;
+  min-height: 58px;
+  border: none;
+  background-color: $light-grey;
+  padding: 16px 0 16px 16px;
+}
+
+.form__radio-label {
+  position: relative;
+  display: block;
+  padding-bottom: 36px;
+}
+
+.form__radio-text {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-left: 29px;
+}
+
+.form__radio-mark {
+  position: absolute;
+  left: -3px;
+  top: -10px;
+  margin-right: 16px;
+  width: 46px;
+  height: 46px;
+  background-color: $light-grey;
+}
+
+.form__radio-label-input[type="radio"]+.form__radio-mark {
+  border-radius: 50%;
+}
+
+.form__radio-label-input[type="radio"]:checked+.form__radio-mark::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: $gray;
+  border-radius: 50%;
+  content: "";
+}
+
+.form__checkbox-label {
+  position: relative;
+  display: block;
+  padding-bottom: 36px;
+}
+
+.form__checkbox-text {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-left: 29px;
+}
+
+.form__checkbox-mark {
+  position: absolute;
+  top: -10px;
+  left: -3px;
+  width: 46px;
+  height: 46px;
+  background-color: $light-grey;
+}
+
+.form__checkbox-label-input[type="checkbox"]:checked+.form__checkbox-mark::before {
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 22px;
+  height: 16px;
+  content: "";
+  background-image: url("../img/form/tick.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.form__textarea {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  min-width: 279px;
+  min-height: 150px;
+  border: none;
+  background-color: $light-grey;
+  padding: 16px 16px;
+}
+
+.form__button {
+  min-width: 280px;
+  min-height: 58px;
+  margin-top: 56px;
+  padding: 16px 0;
+}
+
+.form__remark {
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $gray;
+  text-align: end;
+  margin: 0;
+  padding: 0;
+}
