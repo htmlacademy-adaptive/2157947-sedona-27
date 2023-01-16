@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -35,10 +37,12 @@
     <h1 class="visually-hidden">Форма Отзыва</h1>
     <section class="hero hero--small">
       <img class="hero__subject-name" src="img/catalog/SEDONA.svg" width="229" height="39" alt="СЕДОНА.">
+    </section>
+    <div class="hero-involucre">
       <h2 class="hero__title">Оставьте свой отзыв</h2>
       <p class="hero__text"> Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
         достопримечательностях</p>
-    </section>
+    </div>
     <section class="form">
       <form action="#" method="post" class="form__subtitle">
         <fieldset class="form-fieldset">
@@ -67,14 +71,17 @@
           <label class="form__radio-label">
             <input class="form__radio-label-input" type="radio" id="select__radio-positive" name="select__radio"
               checked="checked">
+            <span class="form__radio-mark"></span>
             <span class="form__radio-text">Скорее положительное</span>
           </label>
           <label class="form__radio-label">
             <input class="form__radio-label-input" type="radio" id="select__radio-negative" name="select__radio">
+            <span class="form__radio-mark"></span>
             <span class="form__radio-text">Скорее отрицательное</span>
           </label>
           <label class="form__radio-label">
             <input class="form__radio-label-input" type="radio" id="select__radio-neutral" name="select__radio">
+            <span class="form__radio-mark"></span>
             <span class="form__radio-text">Затрудняюсь ответить</span>
           </label>
         </fieldset>
@@ -82,18 +89,22 @@
           <h2 class="form__title">Посещенные достопримечательности:</h2>
           <label class="form__checkbox-label">
             <input class="form__checkbox-label-input" type="checkbox" name="visited__checkbox" checked="checked">
+            <span class="form__checkbox-mark"></span>
             <span class="form__checkbox-text">Мост Дьявола</span>
           </label>
           <label class="form__checkbox-label">
             <input class="form__checkbox-label-input" type="checkbox" name="visited__checkbox" checked="checked">
+            <span class="form__checkbox-mark"></span>
             <span class="form__checkbox-text">Гора-Колокол</span>
           </label>
           <label class="form__checkbox-label">
             <input class="form__checkbox-label-input" type="checkbox" name="visited__checkbox" checked="checked">
+            <span class="form__checkbox-mark"></span>
             <span class="form__checkbox-text">Слайд-парк</span>
           </label>
           <label class="form__checkbox-label">
             <input class="form__checkbox-label-input" type="checkbox" name="visited__checkbox">
+            <span class="form__checkbox-mark"></span>
             <span class="form__checkbox-text">Красные скалы</span>
           </label>
         </fieldset>

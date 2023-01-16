@@ -1,0 +1,28 @@
+.main-footer__wrapper {
+  padding: 28px 77px 23px;
+}
+
+.main-footer__hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.main-footer__copyright {
+  display: flex;
+  flex-direction: column;
+  padding-left: 14px;
+}
+
+.copyright__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+}
+

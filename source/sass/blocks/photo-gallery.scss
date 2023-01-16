@@ -1,0 +1,48 @@
+.photo-gallery {
+  padding: 24px 18px 0;
+  margin: 0;
+}
+
+.photo-gallery__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.photo-gallery__item-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-gallery__title {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 15px;
+  margin: 0;
+}
+
+.photo-gallery__author-name {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $gray;
+  margin: 0;
+  padding-bottom: 11px;
+}
+
+.photo-gallery__like-wrapper {
+  padding-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-gallery__number-of-likes {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0 0 0 14px;
+}
