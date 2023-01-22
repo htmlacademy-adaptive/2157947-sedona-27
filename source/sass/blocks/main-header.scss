@@ -1,21 +1,26 @@
 .main-header {
   position: relative;
-  padding-bottom: 56px;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-header__image {
-  position: absolute;
   left: 50%;
   bottom: -40px;
   margin-left: -68px;
 }
+
 .hero__subject-image {
-    position: absolute;
-    margin: 90px 35px 0;
+  position: absolute;
+  margin: 90px 35px 0;
 }
 
 .hero__subject-name {
   position: absolute;
   margin: 50px 70px 0;
+}
+
+.main-header__logo {
+  height: 85px;
 }

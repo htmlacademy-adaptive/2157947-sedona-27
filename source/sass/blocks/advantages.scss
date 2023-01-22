@@ -1,3 +1,7 @@
+.advantages {
+  display: block;
+}
+
 .advantages__list {
   margin: 0;
   padding: 0;
@@ -7,9 +11,9 @@
 
 .advantages__item-wrapper {
   background-color: $blue;
-  width: 320px;
   min-height: 211px;
   padding: 54px 18px 40px;
+  margin: 0;
 }
 
 .advantages__title {
@@ -43,10 +47,10 @@
 }
 
 .advantages__image {
-  left:-101px;
+  left: -101px;
 }
 
-.advantages__sublist{
+.advantages__sublist {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -57,10 +61,11 @@
 }
 
 .advantages__wrapper {
-display: flex;
-padding: 0;
-margin: 0;
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
+
 .advantages__subicon {
   display: block;
   position: absolute;
@@ -74,6 +79,7 @@ margin: 0;
   padding: 8px 0 16px 65px;
   margin: 0;
 }
+
 .advantages__subdescription {
   font-size: 14px;
   line-height: 21px;
@@ -84,9 +90,7 @@ margin: 0;
   padding: 0 0 0 65px;
   margin: 0;
 }
-.advantages__item--greu {
-  color: black;
-}
+
 .advantages__titles {
   font-size: 18px;
   line-height: 26px;
@@ -113,9 +117,65 @@ margin: 0;
   padding: 17px 0 0;
   margin: 0 auto;
 }
-.advantages__item--greu {
+
+.advantages__item--grey {
+  color: black;
   background-color: $grayscale;
-  width: 320px;
   min-height: 168px;
   padding: 24px 26px 24px 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item---blue {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 256px;
+  }
+
+  .advantages__item {
+    display: flex;
+    width: 100%;
+  }
+
+  .advantages__sublist {
+    display: flex;
+    width: 100%;
+    padding: 55px 0;
+    padding-bottom: 33px;
+  }
+
+  .advantages__item--grey {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    padding: 53px 33px;
+  }
+
+  .advantages__item-wrapper {
+    width: 33.3%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item {
+    display: flex;
+    width: 100%;
+  }
+
+  .advantages__item--grey {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advantages__item--grey {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    padding: 63px 50px 41px 50px;
+  }
 }

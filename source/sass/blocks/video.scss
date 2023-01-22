@@ -1,7 +1,9 @@
 .video__wrapper {
   padding: 17px 26px 38px 28px;
   text-align: center;
+  margin: 0 auto;
 }
+
 .video__title {
   font-size: 18px;
   line-height: 26px;
@@ -10,6 +12,7 @@
   margin: 0;
   padding: 0 0 20px 0;
 }
+
 .video__text {
   font-size: 14px;
   line-height: 21px;
@@ -19,12 +22,38 @@
   margin: 0;
   padding: 0;
 }
+
 .video__play {
   margin: 0;
+  width: 100%;
   padding: 0;
   border: none;
   background-color: #ffffff;
 }
+
 .video__img {
   margin: -60px 70px;
+}
+
+@media (min-width: $tablet-width) {
+  .video__wrapper {
+    display: block;
+    width: 445px;
+    padding: 58px 0 66px;
+  }
+
+  .video__image {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__wrapper {
+    padding: 62px 0 64px;
+  }
+
+  .video__image {
+    padding: 0 200px;
+    ;
+  }
 }

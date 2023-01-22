@@ -46,3 +46,36 @@
   margin: 0;
   padding: 0 0 0 14px;
 }
+
+@media (min-width: $tablet-width) {
+  .photo-gallery {
+    padding: 0 60px 58px;
+  }
+
+  .photo-gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo-gallery__item {
+    width: 50%;
+  }
+
+  .photo-gallery__item--big {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-gallery__item {
+    width: 33.33%;
+  }
+
+  .photo-gallery {
+    padding: 0;
+  }
+
+  .photo-gallery__item--big {
+    width: 100%;
+  }
+}
