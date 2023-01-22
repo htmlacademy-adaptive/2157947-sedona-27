@@ -76,11 +76,11 @@
   background-color: $light-grey;
 }
 
-.form__radio-label-input[type="radio"]+.form__radio-mark {
+.form__radio-label-input[type="radio"]+ .form__radio-mark {
   border-radius: 50%;
 }
 
-.form__radio-label-input[type="radio"]:checked+.form__radio-mark::before {
+.form__radio-label-input[type="radio"]:checked+ .form__radio-mark::before {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -113,7 +113,7 @@
   background-color: $light-grey;
 }
 
-.form__checkbox-label-input[type="checkbox"]:checked+.form__checkbox-mark::before {
+.form__checkbox-label-input[type="checkbox"]:checked+ .form__checkbox-mark::before {
   display: inline-block;
   position: absolute;
   top: 15px;
