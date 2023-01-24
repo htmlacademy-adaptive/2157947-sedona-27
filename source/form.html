@@ -45,7 +45,7 @@
     </section>
     <section class="form">
       <form action="#" method="post" class="form__subtitle">
-        <section class="form__information">
+        <div class="form__information">
           <fieldset class="form-fieldset">
             <h2 class="form__title">Представьтесь:</h2>
             <label class="form__label" for="appointment-name">ИМЯ*:</label>
@@ -67,60 +67,60 @@
             <input class="form__input" type="email" id="newsletter-email" name="subtitle-form__newsletter-email"
               placeholder="Введите e-mail" required>
           </fieldset>
-          <section>
-            <fieldset class="form-fieldset-radio">
-              <h2 class="form__title">Ваше общее впечатление:</h2>
-              <div class="form__wrapper">
-                <label class="form__radio-label">
-                  <input class="form__radio-label-input" type="radio" id="select__radio-positive" name="select__radio"
-                    checked="checked">
-                  <span class="form__radio-mark"></span>
-                  <span class="form__radio-text">Скорее положительное</span>
-                </label>
-                <label class="form__radio-label">
-                  <input class="form__radio-label-input" type="radio" id="select__radio-negative" name="select__radio">
-                  <span class="form__radio-mark"></span>
-                  <span class="form__radio-text">Скорее отрицательное</span>
-                </label>
-                <label class="form__radio-label">
-                  <input class="form__radio-label-input" type="radio" id="select__radio-neutral" name="select__radio">
-                  <span class="form__radio-mark"></span>
-                  <span class="form__radio-text">Затрудняюсь ответить</span>
-                </label>
-              </div>
-            </fieldset>
-            <fieldset class="form-fieldset-checkbox">
-              <h2 class="form__title">Посещенные достопримечательности:</h2>
-              <div class="form__wrapper-checkbox">
-                <label class="form__checkbox-label">
-                  <input class="form__checkbox-label-input" type="checkbox" name="visited__checkbox" checked="checked">
-                  <span class="form__checkbox-mark"></span>
-                  <span class="form__checkbox-text">Мост Дьявола</span>
-                </label>
-                <label class="form__checkbox-label">
-                  <input class="form__checkbox-label-input" type="checkbox" name="visited__checkbox" checked="checked">
-                  <span class="form__checkbox-mark"></span>
-                  <span class="form__checkbox-text">Гора-Колокол</span>
-                </label>
-                <label class="form__checkbox-label">
-                  <input class="form__checkbox-label-input" type="checkbox" name="visited__checkbox" checked="checked">
-                  <span class="form__checkbox-mark"></span>
-                  <span class="form__checkbox-text">Слайд-парк</span>
-                </label>
-                <label class="form__checkbox-label">
-                  <input class="form__checkbox-label-input" type="checkbox" name="visited__checkbox">
-                  <span class="form__checkbox-mark"></span>
-                  <span class="form__checkbox-text">Красные скалы</span>
-                </label>
-              </div>
-            </fieldset>
-            <fieldset class="form-fieldset">
-              <h2 class="form__title">Опишите свои эмоции:</h2>
-              <textarea class="form__textarea" name="feedback__text" placeholder="Опишите подробно все свои восторги"
-                required=""></textarea>
-            </fieldset>
-            <button class="form__button button" type="submit">Отправить отзыв</button>
-            <p class="form__remark">* — обязательные поля</p>
+        </div>
+        <fieldset class="form-fieldset-radio">
+          <h2 class="form__title">Ваше общее впечатление:</h2>
+          <div class="form__wrapper">
+            <label class="form__radio-label">
+              <input class="form__radio-label-input" type="radio" id="select__radio-positive" name="select__radio"
+                checked="checked">
+              <span class="form__radio-mark"></span>
+              <span class="form__radio-text">Скорее положительное</span>
+            </label>
+            <label class="form__radio-label">
+              <input class="form__radio-label-input" type="radio" id="select__radio-negative" name="select__radio">
+              <span class="form__radio-mark"></span>
+              <span class="form__radio-text">Скорее отрицательное</span>
+            </label>
+            <label class="form__radio-label">
+              <input class="form__radio-label-input" type="radio" id="select__radio-neutral" name="select__radio">
+              <span class="form__radio-mark"></span>
+              <span class="form__radio-text">Затрудняюсь ответить</span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form-fieldset-checkbox">
+          <h2 class="form__title">Посещенные достопримечательности:</h2>
+          <div class="form__wrapper-checkbox">
+            <label class="form__checkbox-label">
+              <input class="form__checkbox-label-input" type="checkbox" name="visited__checkbox" checked="checked">
+              <span class="form__checkbox-mark"></span>
+              <span class="form__checkbox-text">Мост Дьявола</span>
+            </label>
+            <label class="form__checkbox-label">
+              <input class="form__checkbox-label-input" type="checkbox" name="visited__checkbox" checked="checked">
+              <span class="form__checkbox-mark"></span>
+              <span class="form__checkbox-text">Гора-Колокол</span>
+            </label>
+            <label class="form__checkbox-label">
+              <input class="form__checkbox-label-input" type="checkbox" name="visited__checkbox" checked="checked">
+              <span class="form__checkbox-mark"></span>
+              <span class="form__checkbox-text">Слайд-парк</span>
+            </label>
+            <label class="form__checkbox-label">
+              <input class="form__checkbox-label-input" type="checkbox" name="visited__checkbox">
+              <span class="form__checkbox-mark"></span>
+              <span class="form__checkbox-text">Красные скалы</span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form-fieldset">
+          <h2 class="form__title">Опишите свои эмоции:</h2>
+          <textarea class="form__textarea" name="feedback__text" placeholder="Опишите подробно все свои восторги"
+            required=""></textarea>
+        </fieldset>
+        <button class="form__button button" type="submit">Отправить отзыв</button>
+        <p class="form__remark">* — обязательные поля</p>
       </form>
 
     </section>
