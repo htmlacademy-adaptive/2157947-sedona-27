@@ -1,11 +1,24 @@
 .social__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 33px 0 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    padding: 0;
+  }
+}
+
 .social__item {
   padding-right: 6px;
 }
-
