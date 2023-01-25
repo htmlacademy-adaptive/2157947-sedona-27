@@ -5,9 +5,7 @@
 }
 
 body {
-  margin: 0 auto;
-  max-width: 1200px;
-  min-width: 320px;
+  margin: 0;
 }
 
 img {
@@ -29,18 +27,4 @@ a {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.button {
-  font-family: $main-font;
-  display: inline-block;
-  font-size: 21px;
-  line-height: 26px;
-  text-align: center;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: $blue;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: none;
 }

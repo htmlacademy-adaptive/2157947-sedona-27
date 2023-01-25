@@ -1,0 +1,19 @@
+.copyright__text {
+  display: block;
+  margin-right: 12px;
+  text-transform: uppercase;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  color: $black;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:active {
+    color: $grey;
+  }
+}

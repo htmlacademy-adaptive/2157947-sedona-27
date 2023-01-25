@@ -1,0 +1,28 @@
+.button {
+  width: 100%;
+  padding: 16px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: $white;
+  background-color: $blue;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+
+  &:hover {
+    background-color: $middle-blue;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $dark-blue;
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: $neutral;
+    pointer-events: none;
+  }
+}
