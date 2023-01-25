@@ -1,0 +1,37 @@
+.page-body {
+  min-width: $mobile-width;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $brown;
+  background-color: $basic;
+}
+
+.page-body__modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($black, 0.3);
+  z-index: 2;
+
+  &--close {
+    display: none;
+  }
+}
+
+.page-body__wrapper {
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 5px 15px rgba($darkest-grey, 0.2);
+  }
+}

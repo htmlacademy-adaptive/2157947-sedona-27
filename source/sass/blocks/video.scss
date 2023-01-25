@@ -1,63 +1,88 @@
-.video__wrapper {
-  padding: 17px 26px 38px 28px;
-  text-align: center;
-  margin: 0 auto;
+.video__headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 17px 0 38px 0;
+  border-top: 1px solid $neutral;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+    border: none;
+  }
 }
 
-.video__title {
+.video__headline-title {
+  margin: 0 0 28px 0;
+  font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  font-weight: 700;
+  color: $black;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0 0 20px 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 445px;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
-.video__text {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
+.video__headline-description {
+  max-width: 260px;
+  margin: 0;
   text-transform: uppercase;
-  color: $gray;
-  margin: 0;
-  padding: 0;
-}
+  text-align: center;
 
-.video__play {
-  margin: 0;
-  width: 100%;
-  padding: 0;
-  border: none;
-  background-color: #ffffff;
+  @media (min-width: $tablet-width) {
+    max-width: 445px;
+  }
 }
 
 .video__img {
-  margin: -60px 70px;
-}
-
-.video__image {
+  display: block;
   width: 100%;
-  padding: 0 20px;
+  background-color: $brown-accent;
+
+  @media (min-width: $desktop-width) {
+    min-width: 800px;
+  }
 }
 
-@media (min-width: $tablet-width) {
-  .video__wrapper {
-    display: block;
-    width: 445px;
-    padding: 58px 0 66px;
-  }
+.video__wrapper {
+  position: relative;
+  padding: 0 20px;
 
-  .video__image {
+  @media (min-width: $tablet-width) {
+    max-width: 800px;
+    margin: 0 auto 45px auto;
     padding: 0 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 88px auto;
+    padding: 0;
+  }
 }
 
-@media (min-width: $desktop-width) {
-  .video__wrapper {
-    padding: 62px 0 64px;
+.video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  margin: auto;
+  padding: 0;
+  border: none;
+  background-color: $transparent;
+  width: 48px;
+  height: 54px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  &:hover {
+    opacity: 0.5;
   }
 
-  .video__image {
-    padding: 0 200px;
+  &:active {
+    opacity: 0.3;
   }
 }

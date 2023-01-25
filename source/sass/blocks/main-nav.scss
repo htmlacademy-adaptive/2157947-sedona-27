@@ -1,58 +1,197 @@
 .main-nav__list {
-  list-style-type: none;
-}
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-width: $mobile-width;
+  z-index: 2;
+  background-color: $blue;
 
-@media (min-width: $tablet-width) {
-  .main-nav__list {
+  @media (min-width: $tablet-width) {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-  }
-
-  .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav__item {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    padding: 18px 0 17px 0;
-  }
-
-  .main-nav__item:nth-of-type(4n + 2) {
-    margin-right: 20%;
+    background-color: $white;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .main-nav__list {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    max-width: 1200px;
+.main-nav__item {
+  border-bottom: 1px solid rgba($dark-grey, 0.2);
+  border-top: 1px solid rgba($white, 0.2);
+
+  @media (min-width: $tablet-width) {
+    width: 20%;
+    border: none;
   }
 
-  .main-nav__item {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    padding: 18px 0 17px 0;
+  &:first-child {
+    border-top: none;
+  }
+
+  &:nth-child(2),
+  &:nth-child(6) {
+    @media (min-width: $tablet-width) {
+      margin-right: 20%;
+    }
+  }
+
+  &:last-child {
+    background-image: linear-gradient(180deg, rgba($black, 0) 0%, rgba($black, 0.2) 100%);
+    background-size: 100% 7px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+
+    @media (min-width: $tablet-width) {
+      background-image: none;
+      background-size: 0 0;
+    }
   }
 }
 
 .main-nav__link {
+  display: block;
+  padding: 17px 12px 12px 12px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  font-weight: 700;
-  color: #000000;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 12px 17px 12px;
+    font-size: 14px;
+    line-height: 21px;
+    color: $black;
+  }
+
+  &:hover {
+    background-color: $middle-blue;
+
+    @media (min-width: $tablet-width) {
+      color: $blue;
+      background-color: $white;
+    }
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $dark-blue;
+
+    @media (min-width: $tablet-width) {
+      color: rgba($black, 0.3);
+      background-color: $white;
+    }
+  }
+
+  &--current {
+    pointer-events: none;
+
+    @media (min-width: $tablet-width) {
+      color: $brown-accent;
+    }
+  }
 }
 
-.main-nav__links {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
+.main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 18px;
+  border: none;
+  background-color: $transparent;
+  width: 23px;
+  height: 22px;
+  padding: 0;
+  cursor: pointer;
+  z-index: 4;
+
+  &:hover {
+    &::before,
+    &::after {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed {
+  .main-nav__toggle {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 23px;
+      height: 4px;
+      background-color: $blue;
+      box-shadow: 0 9px 0 0 $blue,
+        0 18px 0 0 $blue;
+    }
+  }
+
+  .main-nav__item {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+  }
+}
+
+.main-nav--opened {
+  .main-nav__toggle {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 11px;
+      right: 0;
+      background-color: $white;
+      height: 4px;
+      width: 28px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.main-nav--nojs {
+  .main-nav__toggle {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+  }
+
+  .main-nav__list {
+    @media (max-width: $mobile-width-only) {
+      position: relative;
+      min-height: 0;
+      margin-top: -56px;
+      z-index: 3;
+    }
+  }
+
+  .main-nav__item {
+    @media (max-width: $mobile-width-only) {
+      display: block;
+    }
+  }
 }

@@ -1,3 +1,43 @@
-.map__cart {
+.map {
   width: 100%;
+}
+
+.map__frame {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.map__wrapper {
+  width: 100%;
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    background-image: url("../img/map-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/map-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
+  }
 }
